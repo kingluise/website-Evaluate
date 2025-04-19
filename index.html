@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Evaluation - STU190444</title>
+    <link rel="stylesheet" href="evaluation-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Website Evaluation Report</h1>
+        <p>Student Number: STU12345</p>
+        <p>This report presents the evaluation of the "Discover Dubai" website, focusing on browser compatibility, screen size/device view testing, HTML and CSS validation, and readability.</p>
+    </header>
+
+    <section class="section">
+        <h2>1. Browser Compatibility Testing</h2>
+        <p>The website was tested across three different web browsers to ensure consistent rendering and functionality. Screenshots of the Home page, Pictures page, and Form page are provided for each browser.</p>
+
+        <div class="subsection">
+            <h3>1.1. Google Chrome</h3>
+            <p class="browser-info">Browser: Google Chrome Version 134.0.6998.118</p>
+            <div class="browser-screenshots">
+                <img src="image/CHomepage.png" alt="Screenshot of Home page in Chrome">
+                <img src="image/CPictures.png" alt="Screenshot of Pictures page in Chrome">
+                <img src="image/CForm.png" alt="Screenshot of Form page in Chrome">
+            </div>
+            <p>The website displays correctly in Chrome. The layout is consistent across all three pages, with all elements visible and interactive. No browser-specific issues were observed.</p>
+        </div>
+
+        <div class="subsection">
+            <h3>1.2. Mozilla Firefox</h3>
+            <p class="browser-info">Browser: Mozilla Firefox Version 133.0.</p>
+            <div class="browser-screenshots">
+                <img src="image/MHomepage.png" alt="Screenshot of Home page in Firefox">
+                <img src="image/MPictures.png" alt="Screenshot of Pictures page in Firefox">
+                <img src="image/MForm.png" alt="Screenshot of Form page in Firefox">
+            </div>
+            <p>Firefox renders the website with minor differences in font rendering compared to Chrome, but the overall layout and functionality are consistent across all three pages. No significant compatibility issues were found.</p>
+        </div>
+
+        <div class="subsection">
+            <h3>1.3. Microsoft Edge</h3>
+            <p class="browser-info">Browser: Microsoft Edge Version 135.0.3179.11.</p>
+            <div class="browser-screenshots">
+                <img src="image/CHomepage.png" alt="Screenshot of Home page in Edge">
+                <img src="image/CPictures.png" alt="Screenshot of Pictures page in Edge">
+                <img src="image/CForm.png" alt="Screenshot of Form page in Edge">
+            </div>
+            <p>Microsoft Edge also displays the website correctly. The rendering is similar to Chrome, and the layout and functionality are consistent across all three pages. No compatibility problems were identified.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>2. Screen Size / Device View Testing</h2>
+        <p>The website's responsiveness was tested across three different screen sizes using the Chrome DevTools Device Toolbar to simulate various devices.</p>
+
+        <div class="subsection">
+            <h3>2.1. Desktop View</h3>
+            <p class="screen-info">Desktop View</p>
+            <div class="device-screenshots">
+                <img src="image/desk1.png" alt="Screenshot of website in Chrome DevTools Desktop View 1">
+                <img src="image/desk2.png" alt="Screenshot of website in Chrome DevTools Desktop View 2">
+            </div>
+            <p>In desktop view, the website presents the full layout with the navigation bar, main content, and footer arranged horizontally. All elements are clearly visible and functional. The layout adapts well to the desktop environment, providing a comprehensive view of the website's content.</p>
+        </div>
+
+        <div class="subsection">
+            <h3>2.2. Tablet View</h3>
+            <p class="screen-info">Simulated Device: iPad Pro (1024x1366 Portrait)</p>
+            <div class="device-screenshots">
+                <img src="image/tablet1.png" alt="Screenshot of Discover Dubai dashboard on iPad Pro 1">
+                <img src="image/tablet2.png" alt="Screenshot of Discover Dubai dashboard on iPad Pro 2">
+            </div>
+            <p>Using Chrome DevTools to simulate an iPad Pro in portrait orientation (1024x1366 pixels), the website displays the complete dashboard. The header with the navigation is clearly visible. The main banner image scales to fit the screen width, followed by the "Why Visit Dubai?" section, presenting three image links in a row. The footer is also displayed at the bottom. The layout is well-organized and optimized for tablet viewing in portrait mode, ensuring all key elements are accessible and readable.<b>CSS media queries are used to transform the layout for mobile devices. Elements are stacked vertically, and font sizes are adjusted for better readability on smaller screens.</b></p>
+        </div>
+
+        <div class="subsection">
+            <h3>2.3. Mobile View</h3>
+            <p class="screen-info">Simulated Device: Samsung Galaxy S8 (360 x 740)</p>
+            <div class="device-screenshots">
+                <img src="image/mobil1.png" alt="Screenshot of Discover Dubai homepage on Samsung Galaxy S8">
+                <img src="image/mobile2.png" alt="Screenshot of Discover Dubai homepage on Samsung Galaxy S8">
+                <img src="image/mobile3.png" alt="Screenshot of Discover Dubai homepage on Samsung Galaxy S8">
+            </div>
+           <p>Using Chrome DevTools to simulate a Samsung Galaxy S8 (360 x 740 pixels), the website adapts to a single-column layout. The navigation menu is displayed as a horizontal bar at the top of the screen. Below the header, the main "Welcome to Dubai" section is prominent, followed by the "Why Visit Dubai?" section with the three image links stacked vertically. The footer is visible at the bottom. The layout is optimized for vertical scrolling and mobile readability.</p>
+        </div>
+    </section>
+
+    <section class="section validation-section">
+      <h2>3. HTML and CSS Validation</h2>
+      <p>The HTML and CSS code was validated using the W3C validators to ensure compliance with web standards.</p>
+
+      <div class="subsection">
+          <h3>3.1. HTML Validation</h3>
+          <p>The HTML code was checked using the <a href="https://validator.w3.org/nu/">W3C Nu HTML Checker</a>.</p>
+
+          <h4>3.1.1. Initial Check of Homepage and Attraction Page</h4>
+          <img src="image/ABValid.png" alt="Screenshot of initial HTML validation messages">
+          <img src="image/HBValid.png" alt="Screenshot of initial HTML validation messages">
+          <p>When the homepage and attraction page HTML were first checked, the tool gave some "Info" messages. These aren't serious errors that break the page, but they point to areas where the code could be written in a better way.</p>
+          <p>Specifically, the tool mentioned two things:</p>
+          <ul>
+              <li><b>Extra slashes in tags:</b> Some tags, like those for images (<code>&lt;img&gt;</code>), had an extra slash at the end (e.g., <code>&lt;img ... /&gt;</code>). It's like writing "okay/" instead of "okay" - it's not wrong, but it's not the usual way to do it in HTML5.</li>
+              <li><b>Missing quotes around information:</b> When we give instructions to HTML tags, like specifying the character set (<code>&lt;meta charset=UTF-8&gt;</code>), the values should be in quotes. It's like saying "Please use the font 'Arial'" instead of "Please use the font Arial". Browsers usually understand it either way, but quotes make the code cleaner and more reliable.</li>
+          </ul>
+          <p>These "Info" messages are suggestions for making the HTML code cleaner and more consistent, so it works well in all browsers.</p>
+
+          <h4>3.1.2. After Corrections</h4>
+          <img src="image/AAValid.png" alt="Screenshot of successful HTML validation">
+          <img src="image/HAValid.png" alt="Screenshot of successful HTML validation">
+          <p>After addressing the "Info" messages by removing the trailing slashes from void elements and ensuring all attribute values were enclosed in quotation marks, the HTML for the homepage and/or attraction page was re-validated. The W3C Nu HTML Checker now reports: <b>"Document checking completed. No errors or warnings to show."</b> This indicates that the HTML code now adheres to the recommended HTML5 standards.</p>
+
+          <h4>3.1.3. Validation Results - Accommodation, Tips, and Contact Pages</h4>
+          <img src="image/ACValid.png" alt="Screenshot of successful HTML validation">
+          <img src="image/TIPValid.png" alt="Screenshot of successful HTML validation">
+          <img src="image/ContValid.png" alt="Screenshot of successful HTML validation">
+          <p>The HTML code for the accommodation, tips, and contact pages was also checked using the W3C Nu HTML Checker. These pages displayed no initial errors or warnings. The validator reported: <b>"Document checking completed. No errors or warnings to show."</b> This indicates that the HTML code for these pages was already compliant with recommended HTML5 standards.</p>
+          </div>
+          <div class="subsection">
+          <h3>3.2. CSS Validation</h3>
+          <p>The CSS code was checked using the <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>.</p>
+
+         <h4>3.2.1. CSS Validation Result</h4>
+         <img src="image/CSSValid.png" alt="Screenshot of successful CSS validation">
+          <p>The CSS code was validated using the W3C CSS Validation Service, and the validator reported: <b>"Congratulations! No Error Found."</b> This indicates that the CSS code adheres to the recommended CSS level 3 standards and is expected to render consistently across different browsers.</p>
+      </div>
+  </section>
+
+    <section class="section">
+        <h2>4. Readability</h2>
+        <p>The readability of the website content was assessed to ensure it is clear and accessible to a wide audience.</p>
+
+        <p>The following measures were taken to enhance readability:</p>
+        <ul>
+            <li><b>Font Choice and Size:</b> The main body text uses Arial, a sans-serif font, at a size of 16px. Sans-serif fonts are generally considered easier to read on screen. The 16px font size provides sufficient readability without being too small.</li>
+            <li><b>Color Contrast:</b> Sufficient color contrast is used between text and background. For example, dark gray text is used on a white background to ensure that the text is easily distinguishable.</li>
+            <li><b>Text Structure:</b> The content is structured using headings (H1, H2, H3) and paragraphs (P) to create a clear hierarchy and break up large blocks of text. This makes it easier for users to scan and understand the information.</li>
+            <li><b>Line Length:</b> Paragraphs are kept to a reasonable line length to prevent eye strain. Long lines can be difficult to read, so keeping them relatively short improves readability.</li>
+            <li><b>Language Clarity:</b> The language used throughout the website is clear, concise, and avoids jargon. This ensures that the content is accessible to a general audience.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>5. Conclusion</h2>
+        <p>The "Discover Dubai" website has been evaluated for browser compatibility, screen size/device view testing, HTML and CSS validation, and readability. The website demonstrates good compatibility across different browsers and responsiveness across various screen sizes, tested using Chrome DevTools. The HTML and CSS code adheres to web standards after corrections. The content is designed to be readable and accessible. Overall, the evaluation indicates that the website meets the requirements for usability and accessibility.</p>
+    </section>
+    <section class="section">
+       <h2>References</h2>
+       <ol>
+           <li>
+               Mozilla Developer Network. n.d. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries">
+                Media Queries - CSS: Cascading Style Sheets | MDN
+               </a>.
+           </li>
+           <li>
+               W3C. n.d.-a. <a href="https://validator.w3.org/nu/">
+                W3C Nu HTML Checker
+               </a>.
+           </li>
+           <li>
+               W3C. n.d.-b. <a href="https://jigsaw.w3.org/css-validator/">
+                W3C CSS Validation Service
+               </a>.
+           </li>
+
+
+           </ol>
+   </section>
+
+</body>
+
+</html>

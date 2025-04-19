@@ -1,0 +1,186 @@
+/* Original CSS (from previous response) */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.subsection {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.browser-info {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.browser-screenshots {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.browser-screenshots img {
+  max-width: 25%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.device-screenshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.device-screenshots img {
+  max-width: 20%;  /* Changed from 25% to 20% */
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional CSS (from your input) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+h1 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.subsection {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease-in-out; /* Smooth transition for zoom effect on all images */
+}
+
+img:hover {
+  transform: scale(1.25); /* Slightly scale up (zoom in) on all images */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for feedback on all images */
+}
+
+.browser-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.browser-screenshots img {
+  max-width: 25%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.browser-info {
+  font-weight: bold;
+}
+
+.screen-info {
+  font-style: italic;
+}
+
+.code-example {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+.validation-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.validation-section img {
+  max-width: 30%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  /* The general img:hover will now handle the zoom for these too */
+}
+
+.validation-section .subsection {
+  flex: 1 1 100%;
+}
